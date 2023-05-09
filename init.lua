@@ -296,6 +296,14 @@ require('lazy').setup({
     end,
   },
 
+  { -- Theme inspired by Atom
+    'overcache/NeoSolarized',
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'NeoSolarized'
+    end,
+  },
+
   -- NOTE: Plugins can specify dependencies.
   --
   -- The dependencies are proper plugin specifications as well - anything
